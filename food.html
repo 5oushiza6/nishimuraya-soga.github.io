@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu | Nishimuraya</title>
+  <link rel="stylesheet" href="food.css">
+</head>
+<body>
+
+<header class="header">
+  <a class="header-logo" href="index.html#top">
+    <img src="images/logo_nishimuraya.svg" alt="Nishimuraya 和洋創作料理 ロゴ">
+  </a>
+
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="header-nav" id="primary-nav" aria-label="メインナビゲーション">
+    <ul class="nav-list">
+      <li><a href="index.html#concept">Concept</a></li>
+      <li><a href="index.html#pickup">Pick Up</a></li>
+      <li><a href="index.html#instagram">Instagram</a></li>
+      <li><a href="index.html#news">News</a></li>
+      <li><a href="index.html#access">Access</a></li>
+
+      <li class="menu">
+        <a href="#">Menu</a>
+        <ul class="dropdown">
+          <li><a href="food.html">Food</a></li>
+          <li><a href="drink.html">Drink</a></li>
+          <li><a href="dessert.html">Dessert</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="food-main">
+  <section class="menu-hero" id="top">
+    <p class="hero-kicker">SEASONAL ITALIAN CUISINE</p>
+    <h1>Food Menu</h1>
+    <p class="hero-copy">
+      季節の食材に合わせて、四季ごとに構成を更新するイタリアンメニューです。<br>
+      定番の手打ちパスタに加え、旬を活かした前菜とメイン料理をご用意しています。
+    </p>
+  </section>
+
+  <section class="menu-section" id="seasonal">
+    <div class="section-head">
+      <h2>季節のおすすめ</h2>
+      <p>Seasonal Highlights</p>
+    </div>
+
+    <div class="seasonal-grid">
+      <article class="seasonal-card">
+        <img src="images/s_005v.webp" alt="春野菜とホタテの前菜">
+        <div class="seasonal-card-body">
+          <h3>春野菜とホタテのカルパッチョ</h3>
+          <p>柑橘の香りを効かせたヴィネグレットで、軽やかに仕上げた一皿。</p>
+          <p class="price">1,780円</p>
+        </div>
+      </article>
+
+      <article class="seasonal-card">
+        <img src="images/s_005v.webp" alt="仔羊のロースト">
+        <div class="seasonal-card-body">
+          <h3>仔羊のロースト 香草パン粉焼き</h3>
+          <p>季節野菜のグリルと赤ワインソースを添えたメインディッシュ。</p>
+          <p class="price">3,200円</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="menu-section" id="course">
+    <div class="section-head">
+      <h2>コース</h2>
+      <p>Course</p>
+    </div>
+
+    <div class="course-list">
+      <article class="course-item">
+        <h3>Stagione 季節のスタンダードコース</h3>
+        <p>前菜2種 / パスタ / 魚料理または肉料理 / ドルチェ / カフェ</p>
+        <p class="price">6,600円</p>
+      </article>
+
+      <article class="course-item">
+        <h3>Degustazione シェフおまかせコース</h3>
+        <p>旬食材を使った全7皿。記念日や会食向けのプレミアム構成です。</p>
+        <p class="price">9,800円</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="menu-section" id="alacarte">
+    <div class="section-head">
+      <h2>アラカルト</h2>
+      <p>A La Carte</p>
+    </div>
+
+    <div class="menu-block">
+      <h3>Antipasto</h3>
+      <ul class="menu-items">
+        <li><span>ブッラータと季節果実のカプレーゼ</span><span>1,450円</span></li>
+        <li><span>真鯛の昆布締め カルパッチョ</span><span>1,680円</span></li>
+        <li><span>生ハムとグリッシーニ盛り合わせ</span><span>1,320円</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block">
+      <h3>Pasta</h3>
+      <ul class="menu-items">
+        <li><span>濃厚ウニのクリームソース タリオリーニ</span><span>2,280円</span></li>
+        <li><span>和牛ボロネーゼ タリアテッレ</span><span>2,050円</span></li>
+        <li><span>浅利とカラスミのペペロンチーノ</span><span>1,980円</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block">
+      <h3>Main</h3>
+      <ul class="menu-items">
+        <li><span>鮮魚のアクアパッツァ</span><span>2,900円</span></li>
+        <li><span>牛ほほ肉の赤ワイン煮込み</span><span>3,400円</span></li>
+        <li><span>大山鶏のインボルティーニ</span><span>2,760円</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="menu-section" id="dessert-pairing">
+    <div class="section-head">
+      <h2>ドルチェ・ペアリング</h2>
+      <p>Dessert & Pairing</p>
+    </div>
+
+    <div class="pairing-box">
+      <p>
+        ティラミスや季節のタルトなどのドルチェは、
+        デザートワインまたはエスプレッソとのペアリング提案も可能です。
+      </p>
+      <a class="pairing-link" href="dessert.html">デザートメニューを見る</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-top">
+    <a class="site-footer-logo" href="index.html#top">
+      <img src="images/logo_nishimuraya.svg" alt="Nishimuraya 和洋創作料理 ロゴ">
+    </a>
+    <nav class="site-footer-links" aria-label="フッターリンク">
+      <a href="#">インスタグラム</a>
+      <a href="#">予約はこちら</a>
+    </nav>
+  </div>
+  <p class="site-footer-copy">© 2026 Nishimuraya All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
