@@ -9,16 +9,44 @@ body{
 /* ヘッダー全体 */
 
 .top-area{
+  position: relative;
   height: 100vh;
-
-  background:
-    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("images/s_005v.webp");
-
-  background-size: cover;
-  background-position: center top;
+  overflow: hidden;
+  background-color: #130d0d;
 }
 
+.main-visual{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.main-visual::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.48), rgba(0,0,0,0.48));
+  z-index: 1;
+}
+
+.top-slideshow,
+.top-slide{
+  position: absolute;
+  inset: 0;
+}
+
+.top-slide{
+  opacity: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: scale(1.02);
+  transition: opacity 1.2s ease;
+}
+
+.top-slide.is-active{
+  opacity: 1;
+}
 .header{
   position: fixed;
   top: 0;
@@ -257,34 +285,6 @@ body{
   font-size:14px;
 }
 
-
-/* インスタグラム */
-.instagram{
-  height: 800px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 200px;
-}
-
-/* 左側 */
-.insta-title{
-  font-size: 40px;
-  color: #ece3e2;
-}
-
-.insta-sub{
-  font-size: 25px;
-  color: #ece3e2;
-}
-
-/* 真ん中 */
-.insta-center-text{
-  font-size: 14px;
-  color: #ece3e2;
-  margin: 20px 0 20px 130px;
-}
-
 /* 右側 */
 .insta-right-text{
   font-size: 14px;
@@ -421,7 +421,7 @@ body{
 .access{
   max-width: 1120px;
   margin: 0 auto 160px;
-  padding: 120px 24px 0;
+  padding: 36px;
   color: #ece3e2;
 }
 
@@ -1362,7 +1362,7 @@ main {
 
 .pickup-card img {
   width: 100%;
-  height: 190px;
+  height: 240px;
   display: block;
   object-fit: cover;
 }
@@ -1482,7 +1482,7 @@ main {
   }
 
   .pickup-card img {
-    height: 170px;
+    height: 210px;
   }
 
   .concept-feature-item h2,
@@ -1716,7 +1716,7 @@ body {
   }
 
   .pickup-card img {
-    height: 170px;
+    height: 210px;
   }
 
   .site-footer-top {
@@ -2584,5 +2584,290 @@ body {
 
   .instagram .instagram-lead {
     max-width: 100%;
+  }
+}
+.top-copy-panel {
+  position: absolute;
+  left: clamp(20px, 5vw, 56px);
+  bottom: clamp(24px, 5vh, 52px);
+  z-index: 2;
+  width: min(720px, calc(100% - 40px));
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.top-copy-lead,
+.top-copy-text {
+  margin: 0;
+  color: #f5eee7;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
+}
+
+.top-copy-lead {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.top-copy-text {
+  margin-top: 18px;
+  font-size: clamp(14px, 1.45vw, 17px);
+  line-height: 2;
+  color: rgba(245, 238, 231, 0.9);
+}
+
+.access-route-list {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.access-route-card {
+  min-height: 340px;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(236, 227, 226, 0.35);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 14px;
+  background: rgba(34, 21, 20, 0.28);
+}
+
+.access-route-text {
+  display: grid;
+  gap: 6px;
+}
+
+.access-route-kicker,
+.access-route-meta {
+  margin: 0;
+  color: rgba(236, 227, 226, 0.78);
+}
+
+.access-route-kicker {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.access-route-card h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.access-route-meta {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.access-route-map {
+  width: 100%;
+  aspect-ratio: 6 / 5;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #2a160f;
+}
+
+.access-route-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 980px) {
+  .access-route-list {
+    grid-template-columns: 1fr;
+  }
+
+  .access-route-card {
+    min-height: 0;
+    padding: 18px 16px;
+  }
+
+  .access-route-map {
+    width: min(100%, 460px);
+    aspect-ratio: 16 / 10;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .access-route-card h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .top-copy-panel {
+    left: 14px;
+    right: 14px;
+    bottom: 16px;
+    width: auto;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .top-copy-lead {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .top-copy-text {
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .access-route-card {
+    padding: 16px 14px;
+    border-radius: 24px;
+  }
+
+  .access-route-card h2 {
+    font-size: 19px;
+  }
+
+  .access-route-kicker {
+    font-size: 12px;
+  }
+
+  .access-route-meta {
+    font-size: 12px;
+  }
+
+  .access-route-map {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 18px;
+  }
+}
+
+
+/* Access Card Refinement */
+.access-route-list {
+  margin-top: 54px;
+  padding-top: 30px;
+  border-top: 1px dotted rgba(236, 227, 226, 0.42);
+}
+
+.access-route-card {
+  padding: 8px 6px 0;
+  border: 0;
+  border-radius: 0;
+  gap: 10px;
+  background: none;
+}
+
+.access-route-text {
+  order: 2;
+  gap: 4px;
+}
+
+.access-route-map {
+  order: 1;
+  border-radius: 20px;
+}
+
+.access-route-kicker {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+
+.access-route-card h2 {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.access-route-meta {
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+@media (max-width: 980px) {
+  .access-route-card {
+    padding: 8px 0 0;
+  }
+
+  .access-route-card h2 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  .access-route-list {
+    margin-top: 40px;
+    padding-top: 22px;
+  }
+
+  .access-route-card {
+    padding: 6px 0 0;
+  }
+
+  .access-route-card h2 {
+    font-size: 16px;
+  }
+
+  .access-route-kicker {
+    font-size: 9px;
+  }
+
+  .access-route-meta {
+    font-size: 10px;
+  }
+
+  .access-route-map {
+    border-radius: 16px;
+  }
+}
+
+
+
+/* Access Note and Link Refinement */
+.access-note {
+  margin: 14px 0 0;
+  color: rgba(236, 227, 226, 0.72);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.access-link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+@media (max-width: 980px) {
+  .access-note {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Hero Refinement */
+@media (max-width: 640px) {
+  .top-area {
+    height: 100svh;
+    min-height: 100svh;
+    height: 100dvh;
+    min-height: 100dvh;
+  }
+
+  .top-copy-lead {
+    font-size: 22px;
+    line-height: 1.32;
+  }
+
+  .top-copy-text {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.8;
   }
 }

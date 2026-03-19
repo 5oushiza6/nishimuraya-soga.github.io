@@ -173,3 +173,31 @@
     }
   });
 })();
+
+(() => {
+  const slides = Array.from(document.querySelectorAll('.top-slide'));
+  if (slides.length < 2) {
+    return;
+  }
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let activeIndex = 0;
+
+  const showSlide = (nextIndex) => {
+    slides[activeIndex].classList.remove('is-active');
+    activeIndex = nextIndex;
+    slides[activeIndex].classList.add('is-active');
+  };
+
+  if (reduceMotion) {
+    slides.forEach((slide, index) => {
+      slide.classList.toggle('is-active', index === 0);
+    });
+    return;
+  }
+
+  window.setInterval(() => {
+    const nextIndex = (activeIndex + 1) % slides.length;
+    showSlide(nextIndex);
+  }, 5000);
+})();

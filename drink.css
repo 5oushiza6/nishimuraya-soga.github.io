@@ -711,3 +711,141 @@ body {
     font-size: 13px;
   }
 }
+
+.featured-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.featured-card--text {
+  background: linear-gradient(160deg, rgba(58, 31, 38, 0.95), rgba(39, 22, 25, 0.98));
+}
+
+.featured-card--text .featured-body {
+  padding: 22px 20px;
+}
+
+.price-note {
+  margin: 14px 0 0;
+  color: var(--accent);
+  font-size: 18px;
+}
+
+.menu-summary {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.menu-summary p {
+  margin: 0;
+}
+
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(56, 35, 38, 0.58);
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.category-nav a:hover {
+  color: var(--accent);
+  border-color: rgba(208, 162, 107, 0.7);
+  background: rgba(78, 47, 52, 0.78);
+}
+
+.detailed-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.detailed-menu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 15px 2px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detailed-menu-list li > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.detailed-menu-list strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.detailed-menu-list p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.detailed-menu-list span {
+  color: var(--accent);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+#menu-wine,
+#menu-beer,
+#menu-cocktail,
+#menu-shochu,
+#menu-fruit,
+#menu-herbal,
+#menu-nonalcohol,
+#menu-softdrink {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 640px) {
+  .category-nav {
+    gap: 8px;
+  }
+
+  .category-nav a {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .detailed-menu-list li {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .detailed-menu-list span {
+    white-space: normal;
+  }
+}
+
+
+.detailed-menu-list span {
+  text-align: right;
+  max-width: 32%;
+}
+
+@media (max-width: 640px) {
+  .detailed-menu-list span {
+    max-width: none;
+  }
+}

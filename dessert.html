@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dessert Menu | Nishimuraya</title>
+  <title>Plate＆Dessert | Nishimuraya</title>
   <link rel="stylesheet" href="dessert.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <img src="images/logo_nishimuraya.svg" alt="Nishimuraya 和洋創作料理 ロゴ">
   </a>
 
-    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-nav">
+  <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-nav">
     <span></span>
     <span></span>
     <span></span>
@@ -21,9 +21,8 @@
 
   <nav class="header-nav" id="primary-nav" aria-label="メインナビゲーション">
     <ul class="nav-list">
-      <li><a href="index.html#concept">Concept</a></li>
+      <li><a href="index.html#top">Concept</a></li>
       <li><a href="index.html#pickup">Pick Up</a></li>
-      <li><a href="index.html#instagram">Instagram</a></li>
       <li><a href="index.html#news">News</a></li>
       <li><a href="index.html#access">Access</a></li>
       <li><a href="recruit.html">Recruit</a></li>
@@ -43,105 +42,151 @@
 
 <main class="dessert-main">
   <section class="menu-hero" id="top">
-    <p class="hero-kicker">SEASONAL DOLCE COLLECTION</p>
-    <h1>Dessert Menu</h1>
+    <p class="hero-kicker">CELEBRATION PLATE & SWEETS</p>
+    <h1>Plate＆Dessert</h1>
     <p class="hero-copy">
-      コースの余韻を引き立てる、季節仕立てのドルチェをご用意しています。<br>
-      フルーツや素材の入荷状況により、内容が変更になる場合があります。
+      ご予約制のデザートプレートを中心に、記念日や日々の気持ちを伝える一皿をご用意しています。<br>
+      食後に楽しめる通常デザートもご案内しております。
     </p>
   </section>
 
-  <section class="menu-section" id="seasonal-dessert">
-    <div class="section-head">
-      <h2>季節のドルチェ</h2>
-      <p>Seasonal Signature</p>
-    </div>
-
-    <div class="featured-grid">
-      <article class="featured-card">
-        <img src="images/s_005v.webp" alt="苺のミルフィーユ">
-        <div class="featured-body">
-          <h3>苺とピスタチオのミルフィーユ</h3>
-          <p>サクサクのパイに、軽いカスタードと旬の苺を重ねた人気の一皿。</p>
-          <p class="price">1,350円</p>
-        </div>
-      </article>
-
-      <article class="featured-card">
-        <img src="images/s_005v.webp" alt="柑橘のタルト">
-        <div class="featured-body">
-          <h3>柑橘のタルト バニラジェラート添え</h3>
-          <p>香り高い柑橘とアーモンド生地を合わせた、季節限定のタルト。</p>
-          <p class="price">1,280円</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
   <section class="menu-section" id="plate-dessert">
-    <div class="section-head">
+    <div class="section-head section-head--plate">
       <h2>デザートプレート</h2>
-      <p>Plate Dessert</p>
+      <p>Recommended Plate</p>
     </div>
 
-    <p class="notice">※ メッセージ付きプレートは前日までのご予約で承ります。</p>
+    <div class="plate-overview">
+      <div class="plate-copy-card">
+        <p class="plate-lead">当店ではデザートプレートの予約を承っております。</p>
+        <p class="plate-text">感謝の気持ちをデザートプレートで伝えてみませんか？</p>
+        <p class="plate-text">お誕生日、卒業式や入学式などの行事、妊娠・出産祝い、日々の感謝、記念日などに合わせてご相談いただけます。</p>
+      </div>
 
-    <div class="plate-list">
-      <article class="plate-item">
-        <h3>Anniversaire 記念日プレート</h3>
-        <p>メッセージ・花火付き。お祝い利用に合わせた盛り付けでご提供します。</p>
-        <p class="price">2,600円</p>
+      <aside class="plate-price-card" aria-label="デザートプレート料金">
+        <p class="price-card-kicker">Price Guide</p>
+        <dl class="price-card-list">
+          <div>
+            <dt>単品 文字のみ</dt>
+            <dd>1100円</dd>
+          </div>
+          <div>
+            <dt>単品 デザイン</dt>
+            <dd>2200円</dd>
+          </div>
+        </dl>
+        <p class="price-card-note">詳しい金額や細かいご相談はお電話にて。</p>
+        <a class="plate-contact-link" href="tel:0432643939">043-264-3939</a>
+      </aside>
+    </div>
+
+    <div class="plate-gallery" aria-label="デザートプレートの作例">
+      <article class="plate-pair">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/happybirthday_m.png" alt="お誕生日向けのデザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">BIRTHDAY</p>
+          <h3>お誕生日</h3>
+          <p>主役の方に合わせた華やかなプレート。</p>
+        </div>
       </article>
 
-      <article class="plate-item">
-        <h3>Chef's Dolce Selection</h3>
-        <p>その日のおすすめドルチェを3種盛りにした、シェフおまかせプレート。</p>
-        <p class="price">2,200円</p>
+      <article class="plate-pair">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/happybirthday_f.png" alt="お誕生日向けの華やかなデザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">BIRTHDAY</p>
+          <h3>お誕生日</h3>
+          <p>色味や雰囲気も含めてご相談いただけます。</p>
+        </div>
+      </article>
+
+      <article class="plate-pair plate-pair--reverse">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/happybirthday_d.png" alt="落ち着いた雰囲気のお誕生日デザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">BIRTHDAY</p>
+          <h3>お誕生日</h3>
+          <p>大人っぽい雰囲気のお祝いにも対応します。</p>
+        </div>
+      </article>
+
+      <article class="plate-pair plate-pair--reverse">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/graduation.png" alt="卒業式や入学式などの行事向けデザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">CEREMONY</p>
+          <h3>卒業式・入学式などの行事</h3>
+          <p>節目の食事会に合わせたプレートです。</p>
+        </div>
+      </article>
+
+      <article class="plate-pair">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/childbirth.png" alt="妊娠や出産祝い向けデザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">GIFT</p>
+          <h3>妊娠・出産祝い</h3>
+          <p>やさしい雰囲気で気持ちを伝える一皿。</p>
+        </div>
+      </article>
+
+      <article class="plate-pair">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/good_job.png" alt="日々の感謝を伝えるデザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">THANKS</p>
+          <h3>日々の感謝</h3>
+          <p>ちょっとした「ありがとう」にもご利用いただけます。</p>
+        </div>
+      </article>
+
+      <article class="plate-pair plate-pair--reverse">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/thanks.png" alt="感謝を伝えるデザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">THANKS</p>
+          <h3>日々の感謝</h3>
+          <p>さりげないお礼を形にしたい日に。</p>
+        </div>
+      </article>
+
+      <article class="plate-pair plate-pair--reverse">
+        <div class="plate-tile plate-tile--image">
+          <img src="images/wedding.png" alt="記念日向けのデザートプレート">
+        </div>
+        <div class="plate-tile plate-tile--text">
+          <p class="plate-tile-tag">ANNIVERSARY</p>
+          <h3>記念日など</h3>
+          <p>大切な一日を締めくくるアニバーサリープレート。</p>
+        </div>
       </article>
     </div>
   </section>
 
-  <section class="menu-section" id="dolce-list">
+  <section class="menu-section menu-section--compact" id="regular-dessert">
     <div class="section-head">
-      <h2>定番ドルチェ</h2>
-      <p>Classic Dolce</p>
+      <h2>通常デザートもあります！</h2>
+      <p>Regular Dessert</p>
     </div>
 
-    <div class="menu-block">
-      <h3>Classic</h3>
+    <div class="regular-dessert-card">
       <ul class="menu-items">
-        <li><span>ティラミス クラシコ</span><span>980円</span></li>
-        <li><span>パンナコッタ 季節のソース</span><span>920円</span></li>
-        <li><span>カタラーナ</span><span>980円</span></li>
+        <li><span>バニラアイス</span><span>350円〜</span></li>
+        <li><span>大人のバニラアイス ①極甘シェリー酒 ②高級カシスリキュール</span><span>各500円〜</span></li>
+        <li><span>千葉酪農無添加ミルク ジェラート</span><span>420円〜</span></li>
+        <li><span>千葉酪農無添加ミルク 濃厚キャラメルジェラート（落花生クランチのせ）</span><span>450円〜</span></li>
+        <li><span>イタリアンカタラーナ2種（抹茶＆ベリー）</span><span>450円</span></li>
+        <li><span>本日のチーズケーキ（店内黒板にて）</span><span>500円（ハーフ330円）</span></li>
       </ul>
-    </div>
-
-    <div class="menu-block">
-      <h3>Gelato</h3>
-      <ul class="menu-items">
-        <li><span>濃厚ピスタチオジェラート</span><span>760円</span></li>
-        <li><span>マダガスカルバニラジェラート</span><span>740円</span></li>
-        <li><span>季節フルーツのソルベ</span><span>780円</span></li>
-      </ul>
-    </div>
-
-    <div class="menu-block">
-      <h3>Takeout Gift</h3>
-      <ul class="menu-items">
-        <li><span>焼き菓子詰め合わせ（6個）</span><span>2,200円</span></li>
-        <li><span>季節のタルト（ホール）</span><span>4,800円</span></li>
-        <li><span>ティラミスボックス</span><span>2,600円</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="menu-section" id="pairing-link">
-    <div class="pairing-box">
-      <p>
-        ドルチェに合わせたデザートワイン・食後酒の提案も可能です。<br>
-        お好みがあればスタッフまでお気軽にお声がけください。
-      </p>
-      <a class="pairing-link" href="drink.html">ドリンクメニューを見る</a>
+      <p class="regular-note">その他デザートは店内黒板にてご確認ください。</p>
     </div>
   </section>
 </main>
@@ -161,12 +206,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

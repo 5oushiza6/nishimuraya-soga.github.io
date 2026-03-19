@@ -21,9 +21,9 @@
 
   <nav class="header-nav" id="primary-nav" aria-label="メインナビゲーション">
     <ul class="nav-list">
-      <li><a href="index.html#concept">Concept</a></li>
+      <li><a href="index.html#top">Concept</a></li>
       <li><a href="index.html#pickup">Pick Up</a></li>
-      <li><a href="index.html#instagram">Instagram</a></li>
+      
       <li><a href="index.html#news">News</a></li>
       <li><a href="index.html#access">Access</a></li>
       <li><a href="recruit.html">Recruit</a></li>
@@ -59,18 +59,18 @@
 
     <div class="seasonal-grid">
       <article class="seasonal-card">
-        <img src="images/s_005v.webp" alt="春野菜とホタテの前菜">
+        <img src="images/meat.jpg" alt="ジャージー牛">
         <div class="seasonal-card-body">
-          <h3>春野菜とホタテのカルパッチョ</h3>
+          <h3>～横芝ジャージー牛～</h3>
           <p>柑橘の香りを効かせたヴィネグレットで、軽やかに仕上げた一皿。</p>
           <p class="price">1,780円</p>
         </div>
       </article>
 
       <article class="seasonal-card">
-        <img src="images/s_005v.webp" alt="仔羊のロースト">
+        <img src="images/carpaccio.jpg" alt="カルパッチョ">
         <div class="seasonal-card-body">
-          <h3>仔羊のロースト 香草パン粉焼き</h3>
+          <h3>～カルパッチョ～本日の鮮魚～</h3>
           <p>季節野菜のグリルと赤ワインソースを添えたメインディッシュ。</p>
           <p class="price">3,200円</p>
         </div>
@@ -180,41 +180,218 @@
 
   <section class="menu-section" id="alacarte">
     <div class="section-head">
-      <h2>アラカルト</h2>
-      <p>A La Carte</p>
+      <h2>フードメニュー</h2>
+      <p>Food Menu</p>
     </div>
 
-    <div class="menu-block">
+    <div class="menu-summary">
+      <p>コースの下に、店内で選びやすいようカテゴリごとに整理して掲載しています。</p>
+      <p>肉・魚は当日の仕入れやサイズで内容が変わるため、「～」表記や時価の商品がございます。金額は税別です。</p>
+    </div>
+
+    <div class="category-nav" aria-label="フードメニューカテゴリ">
+      <a href="#menu-meat">肉料理</a>
+      <a href="#menu-fish">魚料理</a>
+      <a href="#menu-smallplates">その他1品</a>
+      <a href="#menu-cheese">チーズ・前菜</a>
+      <a href="#menu-salad">サラダ</a>
+      <a href="#menu-fry">フライ</a>
+      <a href="#menu-gridd">グリッド</a>
+      <a href="#menu-stew">シチュー</a>
+      <a href="#menu-pasta">パスタ</a>
+      <a href="#menu-pizza">ピザ</a>
+      <a href="#menu-risotto">リゾット</a>
+    </div>
+
+    <div class="menu-block" id="menu-meat">
       <h3>肉料理</h3>
-      <ul class="menu-items">
-        <li><span>横芝ジャージー牛 ステーキ（希少部位各種・煮込み等）</span><span>748円～</span></li>
-        <li><span>旭市 北総豚（ステーキ・とんかつ・ボロネーゼ等）</span><span>1,650円～</span></li>
-        <li><span>千葉県最高峰 上総黒毛和牛</span><span>2,420円～</span></li>
-        <li><span>ジビエ（猪・鹿・熊・鴨・キジ / 千葉県中心）</span><span>1,000円～</span></li>
-      </ul>
+      <p class="block-note">ジビエから和牛まで、主役になる肉料理をカテゴリ別にまとめています。</p>
+
+      <div class="menu-subgroup">
+        <h4>ジビエ</h4>
+        <ul class="detailed-menu-list">
+          <li><div><strong>猪</strong><p>猪もも肉のボンレスハム</p></div><span>600円～</span></li>
+          <li><div><strong>鹿</strong><p>もも肉 欧風ロースト 120g / 欧風ヒレカツ プレミアム 100g / 骨付きスネ肉 シチュー（肉量200g）</p></div><span>1,500円～</span></li>
+          <li><div><strong>キョン</strong><p>モルタデッラ（加工肉 ハム） / ストリップロイン ロースト 120g / 骨付きリブロース 小 100g位</p></div><span>600円～</span></li>
+          <li><div><strong>キジ</strong><p>コジュケイ（キジ科）半身 小</p></div><span>2,200円～</span></li>
+          <li><div><strong>まがも</strong><p>半身：むね肉・もも肉・ささみ・ハツ・砂肝 / 4分の1身：ロースのみ</p></div><span>2,800円～</span></li>
+          <li><div><strong>ジビエのカレーサモサ</strong><p>ミニ春巻き 2ヶ</p></div><span>580円～</span></li>
+          <li><div><strong>牛ヒレ肉ステーキ サービス品</strong><p>ヒレ下肉カット 130g / 260g、シャトーブリアン 180g / 360g、欧風カツ 180g。付け合わせ無し、天然クレソン1盛 200円。</p></div><span>1,450円～</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-subgroup">
+        <h4>ビーフ</h4>
+        <ul class="detailed-menu-list">
+          <li><div><strong>千葉せんば牛（交雑牛 A5）</strong><p>もも肉 たたき 150g</p></div><span>2,428円～</span></li>
+          <li><div><strong>千葉せんば牛（交雑牛 A5）</strong><p>もも肉 ステーキ 150g</p></div><span>2,838円～</span></li>
+          <li><div><strong>横芝ジャージ牛 ストリップロイン</strong><p>尻肉赤身たたき 150g</p></div><span>2,428円～</span></li>
+          <li><div><strong>横芝ジャージ牛 ストリップロイン</strong><p>尻肉赤身ステーキ 150g</p></div><span>2,838円～</span></li>
+          <li><div><strong>横芝ジャージ牛 ハラミ ステーキ</strong><p>150g</p></div><span>2,838円～</span></li>
+          <li><div><strong>横芝ジャージ牛 スネ肉の欧風シチュー</strong><p>90g 1ヶ / 90g 2ヶ</p></div><span>1,980円～</span></li>
+          <li><div><strong>横芝ジャージ牛 ロニョンドヴォー</strong><p>100g</p></div><span>1,408円～</span></li>
+          <li><div><strong>横芝ジャージ牛 トリッパ（モツ）トマト煮込み</strong><p>230g</p></div><span>1,078円</span></li>
+          <li><div><strong>千葉県 最高峰和牛 プレミアム</strong><p>内もも肉 極上ミディアムレア仕立て 100g / 付け合わせ無 / わさび醤油</p></div><span>2,900円～</span></li>
+          <li><div><strong>シャトーブリアン（牛ヒレ肉）ステーキ</strong><p>180g</p></div><span>3,190円</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-subgroup">
+        <h4>ポーク</h4>
+        <ul class="detailed-menu-list">
+          <li><div><strong>いも豚のロース厚切りステーキ</strong><p>230g</p></div><span>1,848円～</span></li>
+          <li><div><strong>いも豚のロース厚切りとんかつ</strong><p>230g</p></div><span>1,848円～</span></li>
+          <li><div><strong>いも豚のサルシッチャ</strong><p>自家製腸詰ブータン ノワール 竹炭</p></div><span>1,100円～</span></li>
+          <li><div><strong>横芝ダイヤモンドポーク 熟成サラミ</strong><p>S / M</p></div><span>390円～</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-subgroup">
+        <h4>チキン</h4>
+        <ul class="detailed-menu-list">
+          <li><div><strong>ローストチキン</strong><p>130g / レモン塩</p></div><span>1,078円～</span></li>
+          <li><div><strong>フライドチキン</strong><p>130g / トマトソース</p></div><span>1,408円～</span></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="menu-block">
+    <div class="menu-block" id="menu-fish">
       <h3>魚料理</h3>
-      <ul class="menu-items">
-        <li><span>カルパッチョ（千葉中心の活け〆・希少魚）</span><span>748円～</span></li>
-        <li><span>鮮魚ポワレ・フリット 各種</span><span>880円</span></li>
+      <p class="block-note">鮮魚は時価です。刺身・カルパッチョ・火入れ料理からお選びいただけます。</p>
+      <ul class="detailed-menu-list">
+        <li><div><strong>本マグロ（三重県）</strong><p>赤身 刺身 1枚 / 中トロ 刺身 1枚</p></div><span>290円～</span></li>
+        <li><div><strong>神経〆 真鯛（愛知県）</strong><p>刺身・カルパッチョ 各680円（1人前） / ポワレ</p></div><span>680円～</span></li>
+        <li><div><strong>特選釣り物 天然ぶり（高知県）</strong><p>刺身・カルパッチョ / 背肉 片面焼き レア仕立て 1枚 / ミラノ風カツレツ / レア仕立てステーキ 100g</p></div><span>290円～</span></li>
+        <li><div><strong>天然シマアジ（宮城県）</strong><p>刺身・カルパッチョ 各680円（1人前）</p></div><span>680円～</span></li>
+        <li><div><strong>黒むつ（伊豆大島）</strong><p>刺身・カルパッチョ 各680円（1人前） / 炙り刺身 1枚</p></div><span>390円～</span></li>
+        <li><div><strong>寒真さば（銚子港）</strong><p>酢〆炙り刺身 SS / S / M</p></div><span>390円～</span></li>
+        <li><div><strong>アトランティックサーモン（解凍）</strong><p>刺身・カルパッチョ 各680円（1人前） / フライ</p></div><span>680円～</span></li>
+        <li><div><strong>つぶ貝 刺身</strong><p>中サイズ 1ヶ</p></div><span>600円</span></li>
       </ul>
     </div>
 
-    <div class="menu-block">
-      <h3>チーズ</h3>
-      <ul class="menu-items">
-        <li><span>千葉のチーズ</span><span>220円</span></li>
-        <li><span>世界のチーズ</span><span>220円</span></li>
+    <div class="menu-block" id="menu-smallplates">
+      <h3>その他1品</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>生牡蠣（岡山）</strong><p>牡蠣酢 SS / S / M</p></div><span>390円～</span></li>
+        <li><div><strong>真鱈白子（北海道）</strong><p>白子ポン酢 SS / S / M / 白子天ぷら</p></div><span>390円～</span></li>
+        <li><div><strong>あんこう肝</strong><p>あん肝ポン酢 SS / S / M</p></div><span>390円～</span></li>
+        <li><div><strong>めひかり（銚子）</strong><p>目光のから揚げ（レモン塩）</p></div><span>680円～</span></li>
+        <li><div><strong>ホタルイカ（富山）</strong><p>S / M</p></div><span>390円～</span></li>
+        <li><div><strong>まんぼう</strong><p>とわだ（腸）とダール（豆）のルンダン</p></div><span>880円～</span></li>
+        <li><div><strong>真フグから揚げ</strong><p>お試し 1ヶ</p></div><span>200円～</span></li>
+        <li><div><strong>馬肉（福島）</strong><p>赤身・たてがみ刺身</p></div><span>1,280円～</span></li>
       </ul>
     </div>
 
-    <div class="menu-block">
-      <h3>野菜</h3>
-      <ul class="menu-items">
-        <li><span>あわび茸のステーキ・フライ（長野県農園直送）</span><span>638円</span></li>
-        <li><span>オーガニックサラダ（ちはら台無農薬野菜8種以上 / 自家製ドレッシング）</span><span>748円～</span></li>
+    <div class="menu-block" id="menu-cheese">
+      <h3>チーズ・前菜</h3>
+      <p class="block-note">少量2種 400円から、1ヶ追加は200円です。</p>
+      <ul class="detailed-menu-list">
+        <li><div><strong>チーズ盛り合わせ</strong><p>少量2種 / 3種 / 4種 / 5種</p></div><span>400円～</span></li>
+        <li><div><strong>千葉HARUチーズ工房</strong><p>スーブル / ブルー</p></div><span>盛り合わせ対応</span></li>
+        <li><div><strong>千葉IKAGAWA牧場</strong><p>ジャージー牛ムチュリ / ジャージー牛アルプゲーゼ</p></div><span>盛り合わせ対応</span></li>
+        <li><div><strong>国産・海外チーズ</strong><p>ロピオラ 熟成 / ブリードモー AOP / タレッジョ クレモーゾ AOP / ローマノ・プラデラ 3年熟成 / パルミジャーノ レッジャーノ 13ヶ月 / 北海道長万部フリルチーズ / ゴルゴンゾーラ ピカンテ / ロピオラ グリニョーラ</p></div><span>盛り合わせ対応</span></li>
+        <li><div><strong>大田原</strong><p>大田原チーズステーション</p></div><span>盛り合わせ対応</span></li>
+        <li><div><strong>白トリュフオイル追加</strong><p>ブリードモーにおすすめ</p></div><span>＋100円</span></li>
+        <li><div><strong>レバーペースト（千葉健康鶏）</strong><p>メルバートースト 4枚 200円 / 8枚 350円</p></div><span>400円～</span></li>
+        <li><div><strong>イタリア ビスコッティ</strong><p>コーヒーやワインに浸していただく焼き菓子</p></div><span>400円～</span></li>
+        <li><div><strong>生ハム</strong><p>S 30g / M 50g / L 70g</p></div><span>638円～</span></li>
+        <li><div><strong>アフェッタート盛り合わせ</strong><p>S 1～2名様 / M 3～4名様</p></div><span>968円～</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block" id="menu-salad">
+      <h3>サラダ</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>サーモンとぶりのマリネとフレッシュチーズサラダ</strong><p>S 1～2名様 / M 3～4名様</p></div><span>748円～</span></li>
+        <li><div><strong>千葉の農園と漁師のニシムラヤおまかせサラダ</strong><p>S 1～2名様 / M 3～4名様</p></div><span>748円～</span></li>
+        <li><div><strong>生ハムとゴルゴンゾーラのサラダ</strong><p>S 1～2名様 / M 3～4名様</p></div><span>748円～</span></li>
+        <li><div><strong>グリーンサラダ</strong><p>S 1～2名様 / M 3～4名様</p></div><span>418円～</span></li>
+        <li><div><strong>本日の彩野菜ピクルス</strong></div><span>528円</span></li>
+      </ul>
+
+      <div class="menu-subgroup">
+        <h4>トッピング</h4>
+        <ul class="detailed-menu-list compact-list">
+          <li><div><strong>トリュフバターミックスナッツ</strong></div><span>420円</span></li>
+          <li><div><strong>クリームチーズペッパー</strong><p>トリュフ / レモン</p></div><span>各420円</span></li>
+          <li><div><strong>おつまみパルメジャーノチーズ</strong></div><span>420円</span></li>
+          <li><div><strong>蜂蜜 ゴルゴンゾーラチーズ</strong></div><span>420円</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-block" id="menu-fry">
+      <h3>フライ</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>フレンチフライドポテト</strong></div><span>420円～</span></li>
+        <li><div><strong>長野産あわび茸フライ</strong></div><span>680円～</span></li>
+        <li><div><strong>アランチーニ</strong><p>1ヶ</p></div><span>200円～</span></li>
+        <li><div><strong>ソフトシェルクラブ</strong><p>コチュジャンソース</p></div><span>680円～</span></li>
+        <li><div><strong>本日の鮮魚できまぐれかき揚げ</strong></div><span>880円～</span></li>
+        <li><div><strong>本日のフィッシュ＆チップス</strong></div><span>880円～</span></li>
+        <li><div><strong>わかさぎのフリット</strong><p>通常 / ハーフ</p></div><span>390円～</span></li>
+        <li><div><strong>しらこのフリット（からすみかけ）</strong><p>1ヶ / 何個でも注文可</p></div><span>100円～</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block" id="menu-gridd">
+      <h3>グリッド</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>天然酵母バケットスライス</strong></div><span>000円</span></li>
+        <li><div><strong>長野産あわび茸ステーキ</strong></div><span>580円～</span></li>
+        <li><div><strong>ガーリックトースト</strong></div><span>450円</span></li>
+        <li><div><strong>じゃが芋の明太チーズガレット</strong></div><span>680円～</span></li>
+        <li><div><strong>小あわびとあわび茸のブルゴーニュ風</strong><p>バケットなし</p></div><span>980円～</span></li>
+        <li><div><strong>本日の鮮魚ポワレ</strong></div><span>800円～</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block" id="menu-stew">
+      <h3>シチュー</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>トリッパ（モツ）トマト煮込み</strong></div><span>980円～</span></li>
+        <li><div><strong>砂肝のアーリオオーリオ（アヒージョ）</strong></div><span>680円～</span></li>
+        <li><div><strong>旭市マッシュトリュフオムレツ</strong></div><span>1,500円～</span></li>
+        <li><div><strong>nishimuraya流オリジナル豚煮</strong></div><span>1,280円～</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block" id="menu-pasta">
+      <h3>パスタ</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>ペペロンチーノ</strong></div><span>1,280円～</span></li>
+        <li><div><strong>きのこと大根、魚介出汁 和風</strong></div><span>1,380円～</span></li>
+        <li><div><strong>あさりと生海苔和風クリーム</strong></div><span>1,380円～</span></li>
+        <li><div><strong>千葉いも豚のラグーソース</strong></div><span>1,680円～</span></li>
+        <li><div><strong>サーモン＆ぶり、ほうれん草レモンクリーム</strong></div><span>1,680円～</span></li>
+        <li><div><strong>ペンネアラビアータ</strong></div><span>1,280円～</span></li>
+        <li><div><strong>カルボナーラ</strong></div><span>1,380円～</span></li>
+        <li><div><strong>マッシュトリュフクリーム</strong></div><span>1,500円～</span></li>
+        <li><div><strong>あさりとしらす、フレッシュトマト レモン</strong></div><span>1,500円～</span></li>
+        <li><div><strong>ゴルゴンゾーラクリームソース</strong></div><span>1,680円～</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block" id="menu-pizza">
+      <h3>ピザ</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>ゼッポリーニ</strong></div><span>600円～</span></li>
+        <li><div><strong>ゴルゴンゼッポリーニ</strong></div><span>800円～</span></li>
+        <li><div><strong>駿河湾しらすとアンチョビ</strong></div><span>1,480円～</span></li>
+        <li><div><strong>クワトロフロマージュ＋</strong></div><span>1,680円～</span></li>
+        <li><div><strong>ミックスピザ</strong></div><span>1,480円～</span></li>
+        <li><div><strong>生ハムのマルゲリータ</strong></div><span>1,680円～</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-block" id="menu-risotto">
+      <h3>リゾット</h3>
+      <ul class="detailed-menu-list">
+        <li><div><strong>ポルチーニとトリュフのクリーム 白のリゾット</strong></div><span>1,380円～</span></li>
+        <li><div><strong>魚介出汁のサフラントマト 赤のリゾット</strong></div><span>1,380円～</span></li>
+        <li><div><strong>イカ墨と魚介出汁 黒のリゾット</strong></div><span>1,480円～</span></li>
       </ul>
     </div>
   </section>
@@ -250,3 +427,9 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+

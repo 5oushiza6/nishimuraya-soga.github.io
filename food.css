@@ -763,3 +763,230 @@ body {
   color: var(--muted);
   line-height: 1.8;
 }
+
+.menu-summary {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.menu-summary p {
+  margin: 0;
+}
+
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.category-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(59, 40, 40, 0.55);
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.category-nav a:hover {
+  color: var(--accent);
+  border-color: rgba(216, 176, 122, 0.65);
+  background: rgba(70, 46, 46, 0.78);
+}
+
+.block-note {
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.menu-subgroup {
+  margin-top: 24px;
+}
+
+.menu-subgroup h4 {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.detailed-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.detailed-menu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 15px 2px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detailed-menu-list li > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.detailed-menu-list strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.detailed-menu-list p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.detailed-menu-list span {
+  color: var(--accent);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.compact-list strong {
+  font-size: 16px;
+}
+
+.compact-list p {
+  margin-top: 4px;
+}
+
+#menu-meat,
+#menu-fish,
+#menu-smallplates,
+#menu-cheese,
+#menu-salad,
+#menu-fry,
+#menu-gridd,
+#menu-stew,
+#menu-pasta,
+#menu-pizza,
+#menu-risotto {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 640px) {
+  .category-nav {
+    gap: 8px;
+  }
+
+  .category-nav a {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .menu-subgroup h4 {
+    font-size: 16px;
+  }
+
+  .detailed-menu-list li {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .detailed-menu-list span {
+    white-space: normal;
+  }
+}
+
+/* Course Typography Refinement */
+.course-item h3 {
+  font-size: 22px;
+}
+
+.course-item p {
+  font-size: 15px;
+}
+
+.course-item .price {
+  font-size: 18px;
+}
+
+#course-detail .menu-block h3 {
+  font-size: 22px;
+}
+
+.course-detail-list li {
+  font-size: 15px;
+}
+
+.course-note {
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .course-item h3 {
+    font-size: 19px;
+  }
+
+  .course-item p,
+  .course-detail-list li,
+  .course-note {
+    font-size: 14px;
+  }
+
+  .course-item .price,
+  #course-detail .menu-block h3 {
+    font-size: 17px;
+  }
+}
+
+/* Mobile Food Typography Refinement */
+@media (max-width: 640px) {
+  .hero-copy,
+  .menu-summary,
+  .block-note,
+  .course-item p,
+  .course-detail-list li,
+  .course-note,
+  .detailed-menu-list p,
+  .detailed-menu-list span,
+  .menu-items li {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .section-head h2 {
+    font-size: 26px;
+  }
+
+  .section-head p,
+  .category-nav a {
+    font-size: 12px;
+  }
+
+  .course-item h3,
+  .menu-block h3,
+  .seasonal-card h3 {
+    font-size: 18px;
+  }
+
+  .course-item .price,
+  .price,
+  #course-detail .menu-block h3,
+  .menu-subgroup h4 {
+    font-size: 15px;
+  }
+
+  .detailed-menu-list strong,
+  .compact-list strong {
+    font-size: 14px;
+  }
+}

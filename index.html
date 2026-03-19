@@ -25,9 +25,9 @@
 
       <nav class="header-nav" id="primary-nav" aria-label="メインナビゲーション">
         <ul class="nav-list">
-          <li><a href="#concept">Concept</a></li>
+          <li><a href="#top">Concept</a></li>
           <li><a href="#pickup">Pick Up</a></li>
-          <li><a href="#instagram">Instagram</a></li>
+          
           <li><a href="#news">News</a></li>
           <li><a href="#access">Access</a></li>
           <li><a href="recruit.html">Recruit</a></li>
@@ -44,30 +44,22 @@
         </ul>
       </nav>
     </header>
-<section class="main-visual"></section>
+<section class="main-visual" aria-label="トップ写真">
+  <div class="top-slideshow" aria-hidden="true">
+    <div class="top-slide is-active" style="background-image: url('images/nishimuraya1.jpg');"></div>
+    <div class="top-slide" style="background-image: url('images/nishimuraya2.jpg');"></div>
+    <div class="top-slide" style="background-image: url('images/nishimuraya3.jpg');"></div>
+    <div class="top-slide" style="background-image: url('images/nishimuraya4.jpg');"></div>
+  </div>
+</section>
+
+<div class="top-copy-panel">
+  <p class="top-copy-lead">Nishimurayaは<br>和の感性×イタリア料理技法の<br>和洋創作レストランです</p>
+  <p class="top-copy-text">季節の移ろいに合わせてコース構成を更新し、記念日から日常の会食まで幅広くお楽しみいただける一皿をご提案します。</p>
+</div>
 
 </div>
 
-
-<!-- コンセプト -->
-<section class="concept" id="concept">
-    <figure class="concept-photo concept-photo-left">
-        <img src="images/s_005v.webp" alt="季節の料理写真">
-    </figure>
-
-    <div class="concept-main">
-        <p class="home-kicker">ABOUT NISHIMURAYA</p>
-        <h1 class="home-title">Concept</h1>
-        <p class="home-lead">
-            Nishimuraya は、和の感性とイタリア料理の技法を掛け合わせた和洋創作レストランです。
-            季節の移ろいに合わせてコース構成を更新し、記念日から日常の会食まで幅広くお楽しみいただける一皿をご提案します。
-        </p>
-    </div>
-
-    <figure class="concept-photo concept-photo-right">
-        <img src="images/s_005v.webp" alt="店内の雰囲気写真">
-    </figure>
-</section>
 
 <!-- ピックアップ -->
 <section class="pick-up" id="pickup">
@@ -81,79 +73,30 @@
 
     <div class="pickup-card-list">
         <article class="pickup-card">
-            <img src="images/s_005v.webp" alt="季節のおすすめコース">
+            <img src="images/Course_meal.jpg" alt="季節のおすすめコース">
             <div class="pickup-card-body">
-                <h2>季節のおすすめコース</h2>
-                <p>旬の魚介と野菜を中心に構成した全6皿。季節替わりの看板コースです。</p>
+                <h2>季節に合わせた食材</h2>
+                <p>単品からコース料理までご用意しております。<br>
+                季節ごとに切り替わる料理を是非、お楽しみください。</p>
                 <a class="home-link" href="food.html#course">コース詳細へ</a>
             </div>
         </article>
 
         <article class="pickup-card">
-            <img src="images/s_005v.webp" alt="ワインペアリング">
+            <img src="images/wine.jpg" alt="ワインペアリング">
             <div class="pickup-card-body">
-                <h2>ワインペアリング提案</h2>
-                <p>料理の温度感や香りに合わせて、グラスワインの最適な組み合わせをご提案します。</p>
+                <h2>充実したドリンクメニュー</h2>
+                <p>ワインを中心に、多くのドリンクもご用意しております。</p>
                 <a class="home-link" href="drink.html">ドリンクを見る</a>
             </div>
         </article>
 
         <article class="pickup-card">
-            <img src="images/s_005v.webp" alt="記念日デザートプレート">
+            <img src="images/dessert_plate.jpg" alt="記念日デザートプレート">
             <div class="pickup-card-body">
-                <h2>記念日デザートプレート</h2>
+                <h2>デザートプレート</h2>
                 <p>お祝いメッセージ付きのデザートプレートを、予約時のご相談でご用意可能です。</p>
                 <a class="home-link" href="dessert.html">デザートを見る</a>
-            </div>
-        </article>
-    </div>
-</section>
-<!-- インスタグラム -->
-<section class="instagram" id="instagram">
-    <div class="instagram-intro">
-        <div class="home-section-head">
-            <div>
-                <p class="home-kicker">FOLLOW OUR DAILY SCENES</p>
-                <h1 class="home-title">Instagram</h1>
-            </div>
-            <a class="home-link" href="#">公式Instagramへ</a>
-        </div>
-
-        <p class="home-lead instagram-lead">
-            入荷した食材、季節限定メニュー、デザートプレートの作例などを日々更新しています。
-            ご来店前の雰囲気確認や、最新メニューのチェックにご活用ください。
-        </p>
-    </div>
-
-    <div class="instagram-card-list">
-        <article class="instagram-card instagram-card-account instagram-card-main">
-            <img src="images/スクリーンショット 2026-03-04 121714.png" alt="メインアカウント投稿">
-            <div class="instagram-card-body">
-                <h2>メインアカウント</h2>
-                <p>季節の一皿や営業情報を発信。最新のおすすめメニューはこちらから。</p>
-                <a class="home-link" href="#">アカウントを見る</a>
-            </div>
-        </article>
-
-        <article class="instagram-card instagram-card-account instagram-card-dessert">
-            <img src="images/スクリーンショット 2026-03-04 121735.png" alt="デザートアカウント投稿">
-            <div class="instagram-card-body">
-                <h2>デザートアカウント</h2>
-                <p>記念日プレートや季節ドルチェの作例を中心にご紹介しています。</p>
-                <a class="home-link" href="#">アカウントを見る</a>
-            </div>
-        </article>
-
-        <article class="instagram-card instagram-card-reel">
-            <div class="instagram-reel-media">
-                <img src="images/スクリーンショット 2026-03-04 173719.png" alt="リール動画サムネイル">
-                <span class="instagram-reel-badge">REEL</span>
-                <span class="instagram-reel-play" aria-hidden="true">&#9654;</span>
-            </div>
-            <div class="instagram-card-body">
-                <h2>最新リール</h2>
-                <p>仕込み風景や盛り付けの様子をショート動画で更新中。店舗の空気感も確認できます。</p>
-                <a class="home-link" href="#">リールを見る</a>
             </div>
         </article>
     </div>
@@ -228,7 +171,7 @@
                 ◎ 日・祝 17:30-22:00（Lo.21：00）</p>
             <p class="access-tel">定休日：月曜日</p>
             <p class="access-tel">電話番号：043-264-3939</p>
-            <p>※運営上、21:00前後入店は深夜料金10%頂きます。（基本深夜料金は22：00～のオーダー）<br>
+            <p class="access-note">※運営上、21:00前後入店は深夜料金10%頂きます。（基本深夜料金は22：00～のオーダー）<br>
             ※お通し代、テーブルチャージ料金で550円頂いております。</p>
             <a class="access-link" href="https://airrsv.net/nishimuraya/calendar">ご予約はこちらから</a>
         </div>
@@ -243,35 +186,47 @@
     </div>
 
     <div class="access-route-list">
-        <div class="access-route-card">
+        <article class="access-route-card">
             <div class="access-route-text">
-                <p>○○ホテル</p>
-                <p>徒歩00分</p>
+                <h2>JR蘇我駅 西口～</h2>
             </div>
-            <div class="access-route-thumb">
-                <img src="images/s_005v.webp" alt="蘇我駅からの地図">
+            <div class="access-route-map" aria-label="JR蘇我駅 西口からNishimurayaまでの徒歩地図">
+                <iframe
+                    src="https://www.google.com/maps?hl=ja&amp;f=d&amp;source=s_d&amp;saddr=JR%E8%98%87%E6%88%91%E9%A7%85%20%E8%A5%BF%E5%8F%A3&amp;daddr=%E5%8D%83%E8%91%89%E7%9C%8C%20%E5%8D%83%E8%91%89%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E4%BA%952-11-15%20%E8%98%87%E6%88%91%E7%AC%AC%E4%B8%80%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3101&amp;dirflg=w&amp;output=embed"
+                    title="JR蘇我駅 西口からNishimurayaまでの徒歩地図"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
+        </article>
 
-        <div class="access-route-card">
+        <article class="access-route-card">
             <div class="access-route-text">
-                <p>○○ホテル</p>
-                <p>徒歩00分</p>
+                <h2>アーバンホテル三幸～</h2>
             </div>
-            <div class="access-route-thumb">
-                <img src="images/s_005v.webp" alt="ホテルからの地図">
+            <div class="access-route-map" aria-label="アーバンホテル三幸からNishimurayaまでの徒歩地図">
+                <iframe
+                    src="https://www.google.com/maps?hl=ja&amp;f=d&amp;source=s_d&amp;saddr=%E5%8D%83%E8%91%89%E7%9C%8C%20%E5%8D%83%E8%91%89%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E4%BA%952%E4%B8%81%E7%9B%AE11-11-8&amp;daddr=%E5%8D%83%E8%91%89%E7%9C%8C%20%E5%8D%83%E8%91%89%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E4%BA%952-11-15%20%E8%98%87%E6%88%91%E7%AC%AC%E4%B8%80%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3101&amp;dirflg=w&amp;output=embed"
+                    title="アーバンホテル三幸からNishimurayaまでの徒歩地図"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
+        </article>
 
-        <div class="access-route-card">
+        <article class="access-route-card">
             <div class="access-route-text">
-                <p>○○ホテル</p>
-                <p>徒歩00分</p>
+                <h2>千葉市蘇我スポーツ公園～</h2>
             </div>
-            <div class="access-route-thumb">
-                <img src="images/s_005v.webp" alt="スポーツ公園からの地図">
+            <div class="access-route-map" aria-label="千葉市蘇我スポーツ公園からNishimurayaまでの徒歩地図">
+                <iframe
+                    src="https://www.google.com/maps?hl=ja&amp;f=d&amp;source=s_d&amp;saddr=%E5%8D%83%E8%91%89%E5%B8%82%E8%98%87%E6%88%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E5%85%AC%E5%9C%92&amp;daddr=%E5%8D%83%E8%91%89%E7%9C%8C%20%E5%8D%83%E8%91%89%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E4%BA%952-11-15%20%E8%98%87%E6%88%91%E7%AC%AC%E4%B8%80%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3101&amp;dirflg=w&amp;output=embed"
+                    title="千葉市蘇我スポーツ公園からNishimurayaまでの徒歩地図"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
+        </article>
     </div>
 </section>
 
@@ -292,6 +247,21 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
