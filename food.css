@@ -990,3 +990,9 @@ body {
     font-size: 14px;
   }
 }
+
+/* Food Menu Name Tone */
+.detailed-menu-list strong,
+.compact-list strong {
+  color: rgba(245, 238, 231, 0.84);
+}
