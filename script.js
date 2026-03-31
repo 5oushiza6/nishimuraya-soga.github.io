@@ -41,7 +41,7 @@
 })();
 
 (() => {
-  const targets = document.querySelectorAll('.concept, .pick-up, .instagram');
+  const targets = document.querySelectorAll('.pick-up');
   if (!targets.length) {
     return;
   }

@@ -1,107 +1,106 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせ | Nishimuraya</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>お問い合わせ | Nishimuraya</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body class="contact-page">
 
-<header class="header">
-  <a class="header-logo" href="index.html#top">
-    <img src="images/logo_nishimuraya.svg" alt="Nishimuraya 和洋創作料理 ロゴ">
-  </a>
+	<header class="header">
+		<a class="header-logo" href="index.html#top">
+			<img src="images/logo_nishimuraya.svg" alt="Nishimuraya 和洋創作料理 ロゴ">
+		</a>
 
-  <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-nav">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+		<button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-nav">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 
-  <nav class="header-nav" id="primary-nav" aria-label="メインナビゲーション">
-    <ul class="nav-list">
-      <li><a href="index.html#top">Concept</a></li>
-      <li><a href="index.html#pickup">Pick Up</a></li>
-      
-      <li><a href="index.html#news">News</a></li>
-      <li><a href="index.html#access">Access</a></li>
-      <li><a href="recruit.html">Recruit</a></li>
+		<nav class="header-nav" id="primary-nav" aria-label="メインナビゲーション">
+			<ul class="nav-list">
+				<li><a href="index.html#top">Concept</a></li>
+				<li><a href="index.html#pickup">Pick Up</a></li>
 
-      <li class="menu">
-        <a href="#">Menu</a>
-        <ul class="dropdown">
-          <li><a href="lunch.html">Lunch Menu</a></li>
-          <li><a href="food.html">Food</a></li>
-          <li><a href="drink.html">Drink</a></li>
-          <li><a href="dessert.html">Dessert</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
+				<li><a href="index.html#news">News</a></li>
+				<li><a href="index.html#access">Access</a></li>
+				<li><a href="recruit.html">Recruit</a></li>
 
-<main class="contact-main" id="top">
-  <section class="contact-hero">
-    <p class="home-kicker">CONTACT</p>
-    <h1>お問い合わせフォーム</h1>
-    <p>
-      ご予約に関するご相談、貸切利用、アレルギー対応などはこちらからお問い合わせください。
-    </p>
-  </section>
+				<li class="menu">
+					<a href="#">Menu</a>
+					<ul class="dropdown">
+						<li><a href="lunch.html">Lunch Menu</a></li>
+						<li><a href="food.html">Food</a></li>
+						<li><a href="drink.html">Drink</a></li>
+						<li><a href="dessert.html">Dessert</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-  <section class="contact-form-wrap" aria-labelledby="contact-form-title">
-    <h2 id="contact-form-title">お問い合わせ内容</h2>
+	<main class="contact-main" id="top">
+		<section class="contact-hero">
+			<p class="home-kicker">CONTACT</p>
+			<h1>お問い合わせフォーム</h1>
+			<p>
+				ご予約に関するご相談、貸切利用、アレルギー対応などはこちらからお問い合わせください。
+			</p>
+		</section>
 
-    <form class="contact-form" action="https://formsubmit.co/5oushiza6@gmail.com" method="post">
-      <input type="hidden" name="_subject" value="Nishimurayaサイトからお問い合わせ">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" id="contact-next" value="">
-      <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;">
+		<section class="contact-form-wrap" aria-labelledby="contact-form-title">
+			<h2 id="contact-form-title">お問い合わせ内容</h2>
 
-      <label for="contact-name">お名前</label>
-      <input id="contact-name" name="name" type="text" required>
+			<form class="contact-form" action="https://formsubmit.co/5oushiza6@gmail.com" method="post">
+				<input type="hidden" name="_subject" value="Nishimurayaサイトからお問い合わせ">
+				<input type="hidden" name="_template" value="table">
+				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_next" id="contact-next" value="">
+				<input type="text" name="_honey" tabindex="-1" autocomplete="off"
+					style="position:absolute;left:-9999px;opacity:0;pointer-events:none;">
 
-      <label for="contact-email">メールアドレス</label>
-      <input id="contact-email" name="email" type="email" required>
+				<label for="contact-name">お名前</label>
+				<input id="contact-name" name="name" type="text" required>
 
-      <label for="contact-phone">電話番号（任意）</label>
-      <input id="contact-phone" name="phone" type="tel">
+				<label for="contact-email">メールアドレス</label>
+				<input id="contact-email" name="email" type="email" required>
 
-      <label for="contact-message">お問い合わせ内容</label>
-      <textarea id="contact-message" name="message" rows="7" required></textarea>
+				<label for="contact-phone">電話番号（任意）</label>
+				<input id="contact-phone" name="phone" type="tel">
 
-      <button type="submit">送信する</button>
-    </form>
+				<label for="contact-message">お問い合わせ内容</label>
+				<textarea id="contact-message" name="message" rows="7" required></textarea>
 
-  </section>
-</main>
+				<button type="submit">送信する</button>
+			</form>
 
-<footer class="site-footer">
-  <div class="site-footer-top">
-    <a class="site-footer-logo" href="index.html">
-      <img src="images/logo_nishimuraya.svg" alt="Nishimuraya 和洋創作料理 ロゴ">
-    </a>
-    <div class="site-footer-contact">
-      <a class="site-footer-contact-btn" href="contact.html">お問い合わせはこちら</a>
-    </div>
-  </div>
-  <p class="site-footer-copy">© 2026 Nishimuraya All Rights Reserved.</p>
-</footer>
+		</section>
+	</main>
 
-<script>
-(() => {
-  const nextInput = document.getElementById('contact-next');
-  if (!nextInput) return;
-  nextInput.value = new URL('contact-thanks.html', window.location.href).href;
-})();
-</script>
-<script src="script.js"></script>
+	<footer class="site-footer">
+		<div class="site-footer-top">
+			<a class="site-footer-logo" href="index.html">
+				<img src="images/logo_nishimuraya.svg" alt="Nishimuraya 和洋創作料理 ロゴ">
+			</a>
+			<div class="site-footer-contact">
+				<a class="site-footer-contact-btn" href="contact.html">お問い合わせはこちら</a>
+			</div>
+		</div>
+		<p class="site-footer-copy">© 2026 Nishimuraya All Rights Reserved.</p>
+	</footer>
+
+	<script>
+		(() => {
+			const nextInput = document.getElementById('contact-next');
+			if (!nextInput) return;
+			nextInput.value = new URL('contact-thanks.html', window.location.href).href;
+		})();
+	</script>
+	<script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
